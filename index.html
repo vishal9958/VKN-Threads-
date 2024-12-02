@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKN Threads</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-gray-800 text-white text-center py-2 text-sm">
+        Sign up and get 20% OFF for your first order. <a href="#" class="underline">Sign up now</a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
+            <!-- Left Side: Logo -->
+            <div class="flex items-center space-x-4">
+                <div class="text-xl font-bold text-gray-900">VKN Threads</div>
+            </div>
+    
+            <!-- Centered Navbar -->
+            <div class="relative flex bg-white p-0 rounded-full gap-8 mt-5 mx-auto">
+                <input type="radio" id="nav-shop" name="nav-tabs" class="hidden" checked />
+                <label for="nav-shop" class="flex items-center justify-center h-10 w-28 text-md font-semibold rounded-full cursor-pointer transition-colors duration-150 ease-in-out text-gray-700 hover:text-gray-900 hover:bg-green-200">
+                    Shop
+                </label>
+    
+                <input type="radio" id="nav-most-wanted" name="nav-tabs" class="hidden" />
+                <label for="nav-most-wanted" class="flex items-center justify-center h-10 w-28 text-md font-semibold rounded-full cursor-pointer transition-colors duration-150 ease-in-out text-gray-700 hover:text-gray-900 hover:bg-green-200">
+                    Most Wanted
+                </label>
+    
+                <input type="radio" id="nav-new-arrivals" name="nav-tabs" class="hidden" />
+                <label for="nav-new-arrivals" class="flex items-center justify-center h-10 w-28 text-md font-semibold rounded-full cursor-pointer transition-colors duration-150 ease-in-out text-gray-700 hover:text-gray-900 hover:bg-green-200">
+                    New Arrivals
+                </label>
+    
+                <input type="radio" id="nav-brands" name="nav-tabs" class="hidden" />
+                <label for="nav-brands" class="flex items-center justify-center h-10 w-28 text-md font-semibold rounded-full cursor-pointer transition-colors duration-150 ease-in-out text-gray-700 hover:text-gray-900 hover:bg-green-200">
+                    Brands
+                </label>
+    
+            </div>
+    
+            <!-- Right Side: Search Bar and Icons -->
+            <div class="flex items-center space-x-4">
+                <!-- Search Bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Search" class="w-48 border rounded-lg pl-8 pr-3 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div class="absolute inset-y-0 left-2 flex items-center text-gray-400 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3.172 3.172a4 4 0 115.656 5.656l4.95 4.95a1 1 0 01-1.414 1.414l-4.95-4.95A4 4 0 013.172 3.172zM5.757 4.828a2 2 0 102.828 2.828 2 2 0 00-2.828-2.828z" />
+                        </svg>
+                    </div>
+                </div>
+    
+                <!-- Cart Button -->
+                <div class="flex items-center">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 p-1 rounded-lg hover:bg-blue-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M16 11a1 1 0 00.874-.513l3-6A1 1 0 0019 3H4.72l-.94-1.566A1 1 0 003 1H1a1 1 0 100 2h1.28l3.5 5.83-1.207 2.414a1 1 0 00.095 1.105A1 1 0 005 13h10a1 1 0 000-2H6.176l.843-1.686L15.45 11H16zm-3.343 4a2 2 0 114 0 2 2 0 01-4 0zM5.657 15a2 2 0 100 4 2 2 0 000-4z" />
+                        </svg>
+                    </a>
+                </div>
+    
+                <!-- Login Button -->
+                <div class="flex items-center">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 p-1 rounded-lg hover:bg-blue-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a5 5 0 100-10 5 5 0 000 10zm-7 8a1 1 0 001-1v-1a5 5 0 015-5h2a5 5 0 015 5v1a1 1 0 001 1H3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen flex items-center justify-center">
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+            <source src="Recording 2024-11-03 181036.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Dark Overlay for better text visibility -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Hero Text Content -->
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Level up your style with our summer collections</h1>
+            <a href="#" class="bg-white text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-gray-100">Shop now &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-4xl font-bold text-center mb-12">Popular Products</h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              <!-- Example Product -->
+              <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative">
+                  <img src="tshirt.jpeg" alt="Product 1" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+                      <h3 class="text-white font-semibold text-lg mb-2">Stylish T-Shirt</h3>
+                      <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+                          Show All Collections
+                          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              
+              <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative">
+                  <img src="hoodie.jpeg" alt="Product 2" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+                      <h3 class="text-white font-semibold text-lg mb-2">Cool Hoodie</h3>
+                      <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+                          Show All Collections
+                          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+  
+              <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative">
+                  <img src="jacket.jpeg" alt="Product 3" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+                      <h3 class="text-white font-semibold text-lg mb-2">Trendy Jacket</h3>
+                      <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+                          Show All Collections
+                          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+  
+              <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative">
+                  <img src="Swater.jpeg" alt="Product 4" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+                      <h3 class="text-white font-semibold text-lg mb-2">Casual Sweater</h3>
+                      <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+                          Show All Collections
+                          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <div class="bg-white mx-auto p-6 shadow-lg">
+      <div class="text-left">
+          <h2 class="text-2xl font-bold text-gray-800 pl-5">We provide the best customer experiences</h2>
+          <p class="text-gray-500 mt-2 pl-5 ">We ensure our customers have the best shopping experience</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+          <div class="text-center">
+              <div class="flex items-center justify-center mb-4 w-12 h-12 rounded-full bg-gray-100 text-gray-600">
+                  <!-- Original Products Icon (Example) -->
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4.993 4.993 0 00-3.536 1.465A5 5 0 0012 14.95a5 5 0 003.536-9.131A4.993 4.993 0 0012 4.354zM6.525 10.1a7.973 7.973 0 01-.65 4.908M5 19h14M4 15.65h16M3 12.05h18M4 8.45h16M6.525 10.1L5 8.55 4 8.45"></path>
+                  </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">Original Products</h3>
+              <p class="text-sm text-gray-500 mt-1">We provide a money-back guarantee if the product is not original</p>
+          </div>
+
+          <div class="text-center">
+              <div class="flex items-center justify-center mb-4 w-12 h-12 rounded-full bg-gray-100 text-gray-600">
+                  <!-- Satisfaction Guarantee Icon (Example) -->
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M15 12h.01M7 16h10l-1.293-3.293A1 1 0 0014.293 12H9.707a1 1 0 00-.707.293L7 16zm5-12a7 7 0 110 14 7 7 0 010-14z"></path>
+                  </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">Satisfaction Guarantee</h3>
+              <p class="text-sm text-gray-500 mt-1">Exchange the product if it doesn’t fit on you</p>
+          </div>
+
+          <div class="text-center">
+              <div class="flex items-center justify-center mb-4 w-12 h-12 rounded-full bg-gray-100 text-gray-600">
+                  <!-- New Arrival Everyday Icon (Example) -->
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4 4h-1v-4h-1m4 4h-1v-4h-1m-4 4h-1v-4H8m4 8V4"></path>
+                  </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">New Arrival Everyday</h3>
+              <p class="text-sm text-gray-500 mt-1">We update our collections almost every day</p>
+          </div>
+
+          <div class="text-center">
+              <div class="flex items-center justify-center mb-4 w-12 h-12 rounded-full bg-gray-100 text-gray-600">
+                  <!-- Fast & Free Shipping Icon (Example) -->
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a1 1 0 001 1h3m10-2H9m5-2h2.757A2.5 2.5 0 0119 16.5v2a2.5 2.5 0 01-2.5 2.5H15M3 11V9m6-4h10l4 4-4 4H9a1 1 0 01-1-1V5z"></path>
+                  </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">Fast & Free Shipping</h3>
+              <p class="text-sm text-gray-500 mt-1">We offer fast and free shipping for our loyal customers</p>
+          </div>
+      </div>
+  </div>
+  <div class="py-12 bg-white ">
+<h3 class="text-3xl font-bold mb-10 text-left pl-10">Curated Picks</h3>
+    <div class="flex flex-wrap justify-center gap-24">
+        <div class="w-56 h-72 bg-gray-200 rounded-lg overflow-hidden relative group">
+            <img src="best_seller.jpeg" alt="Best Seller" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 flex items-end justify-center p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="#" class="text-white text-lg font-bold hover:text-gray-300 transition">Best Seller</a>
+            </div>
+        </div>
+        
+        <div class="w-56 h-72 bg-gray-200 rounded-lg overflow-hidden relative group">
+            <img src="shop_men.jpeg" alt="Shop Men" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 flex items-end justify-center p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="#" class="text-white text-lg font-bold hover:text-gray-300 transition">Shop Men</a>
+            </div>
+        </div>
+        
+        <div class="w-56 h-72 bg-gray-200 rounded-lg overflow-hidden relative group">
+            <img src="shop_women.jpeg" alt="Shop Women" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 flex items-end justify-center p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="#" class="text-white text-lg font-bold hover:text-gray-300 transition">Shop Women</a>
+            </div>
+        </div>
+        
+        <div class="w-56 h-72 bg-gray-200 rounded-lg overflow-hidden relative group">
+            <img src="shop_casual.jpeg" alt="Shop Casual" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 flex items-end justify-center p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <a href="#" class="text-white text-lg font-bold hover:text-gray-300 transition">Shop Casual</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Featured Products -->
+<section class="py-16 bg-white ">
+  <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative h-80"> <!-- Increased height -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-sm px-2 py-1 rounded">SALE</span>
+      <img src="Autumn_Dress.jpeg" alt="Autumn Dress" class="w-full h-full object-cover mb-4"> <!-- Changed to h-full for full image display -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+        <h3 class="text-white font-semibold text-lg mb-2">Autumn Dress</h3>
+        <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+          View Details
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative h-80"> <!-- Increased height -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-sm px-2 py-1 rounded">SALE</span>
+      <img src="Gray_Shirt.jpeg" alt="Gray Shirt" class="w-full h-full object-cover mb-4"> <!-- Changed to h-full for full image display -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+        <h3 class="text-white font-semibold text-lg mb-2">Gray Shirt</h3>
+        <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+          View Details
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative h-80"> <!-- Increased height -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-sm px-2 py-1 rounded">SALE</span>
+      <img src="Leather_Coat.jpeg" alt="Leather Coat" class="w-full h-full object-cover mb-4"> <!-- Changed to h-full for full image display -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+        <h3 class="text-white font-semibold text-lg mb-2">Leather Coat</h3>
+        <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+          View Details
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 overflow-hidden relative h-80"> <!-- Increased height -->
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-sm px-2 py-1 rounded">SALE</span>
+      <img src="Casual_Sweater.jpeg" alt="Casual Sweater" class="w-full h-full object-cover mb-4"> <!-- Changed to h-full for full image display -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition-opacity">
+        <h3 class="text-white font-semibold text-lg mb-2">Casual Sweater</h3>
+        <button class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-full flex items-center hover:bg-gray-200 transition">
+          View Details
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-16 bg-white">
+<!-- Offer Section -->
+<div class="flex flex-col md:flex-row items-center justify-center w-full mx-auto mt-14 mb-10 p-6 md:p-0">
+  <!-- Image Part -->
+  <div class="md:w-1/2 h-80 rounded-l-lg rounded-r-none overflow-hidden flex"> <!-- Use flex for responsive behavior -->
+    <img src="tshirt-2428521_640.jpg" alt="Offer Image" class="w-full h-full object-cover rounded-l-lg"> <!-- Apply rounded to the image -->
+  </div>
+
+  <!-- Offer Text Part -->
+  <div class="md:w-1/2 bg-gray-900 text-white p-8 md:p-12 rounded-lg md:rounded-l-none h-80"> <!-- Rounded corners -->
+    <p class="text-xs font-medium uppercase tracking-wide mb-2">Limited Offer</p>
+    <h2 class="text-3xl font-bold mb-4">35% off only this Friday and get a special gift</h2>
+    <button class="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition duration-300 flex items-center  space-x-2">
+      <span>Grab it now</span>
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1.707-10.707a1 1 0 00-1.414 1.414L11.586 10H7a1 1 0 100 2h4.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+<!-- Newsletter Section -->
+<div class="max-w-4xl mx-auto p-6 text-center">
+  <h3 class="text-2xl font-bold text-gray-800 mb-4">Subscribe to our newsletter to get updates<br>to our latest collections</h3>
+  <p class="text-gray-500 mb-6">Get 20% off on your first order just by subscribing to our newsletter</p>
+  <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 space-x-0 sm:space-x-4">
+      <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-gray-900 focus:outline-none w-full sm:w-auto">
+      <button class="px-6 py-3 bg-gray-900 text-white font-semibold rounded-md hover:bg-gray-700 transition duration-300 w-full sm:w-auto">Subscribe</button>
+  </div>
+  <p class="text-gray-500 mt-4 text-sm">You will be able to unsubscribe at any time.<br>Read our <a href="#" class="text-gray-900 underline">Privacy Policy</a> here.</p>
+</div>
+</section>
+<section>
+    <footer class="text-gray-200 bg-gray-900">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between">
+            
+            <!-- Logo & Social Icons -->
+            <div class="mb-8 md:mb-0 md:flex-grow">
+                <h3 class="text-xl font-semibold mb-4">VKN Threads</h3>
+                <p class="mb-4 text-gray-400">Style that speaks. Discover quality, comfort, and confidence with VKN Threads.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-white transition">
+                        <img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="LinkedIn" class="w-6 h-6 rounded-full">
+                    </a>
+                    <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-white transition">
+                        <img src="https://cdn.pixabay.com/photo/2018/05/08/18/25/facebook-3383596_960_720.png" alt="Facebook" class="w-6 h-6 rounded-full">
+                    </a>
+                    <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-white transition">
+                        <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png?semt=ais_hybrid" alt="Instagram" class="w-6 h-6 rounded-full">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Shop Links -->
+            <div class="mb-8 md:mb-0 md:flex-grow">
+                <h4 class="text-lg font-semibold mb-4">Shop</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Men's Collection</a></li>
+                    <li><a href="#" class="hover:text-white transition">Women's Collection</a></li>
+                    <li><a href="#" class="hover:text-white transition">New Arrivals</a></li>
+                    <li><a href="#" class="hover:text-white transition">Sales & Discounts</a></li>
+                </ul>
+            </div>
+    
+            <!-- About Us Links -->
+            <div class="md:flex-grow">
+                <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Sustainability</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom Links -->
+        <div class="mt-6 pt-4 border-t border-gray-800 text-center text-sm">
+            <p class="mb-2">
+                <a href="#" class="hover:text-white transition">Terms & Conditions</a> | 
+                <a href="#" class="hover:text-white transition">Privacy</a> | 
+                <a href="#" class="hover:text-white transition">Security</a>
+            </p>
+            <p>VKN Threads © 2024. “VKN Threads” is a registered trademark of VKN Threads, Inc.</p>
+        </div>
+    </footer>
+</section>
+
+
+</body>
+
+
+
+
+
+</html>
